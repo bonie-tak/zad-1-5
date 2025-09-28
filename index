@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Kubica Szymon - Szkielet zaliczeniowy</title>
+  <script>
+    function WinOpen_z1() {
+      window.open("z1_kub.html","okienko_z1","toolbar=no,directories=no,menubar=no,height=380,width=300,top=100,left=100");
+    }
+    function WinOpen_z2() {
+      window.open("z2_kub.html","okienko_z2","toolbar=no,directories=no,menubar=no,height=200,width=400,top=150,left=150");
+    }
+    function WinOpen_z5() {
+      // otwiera okno zadania 5 (Wieniawa)
+      window.open("z5_kub.html","okienko_z5","toolbar=no,directories=no,menubar=no,height=260,width=420,top=200,left=200");
+    }
+    function okno_zamknij() {
+      window.close();
+    }
+  </script>
+</head>
+<body>
+  <h2>Szkielet zaliczeniowy — Szymon Kubica (nr 13)</h2>
+  <form>
+    <input type="button" value="Zadanie 1" onclick="WinOpen_z1()"><br><br>
+    <input type="button" value="Zadanie 2" onclick="WinOpen_z2()"><br><br>
+    <input type="button" value="Zadanie 5 - Wieniawa" onclick="WinOpen_z5()"><br><br>
+    <input type="button" value="Zamknij okno" onclick="okno_zamknij()">
+  </form>
+</body>
+</html>
