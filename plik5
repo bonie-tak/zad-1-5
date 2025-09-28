@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Grafika 4 - Kubica</title>
+  <script> function okno_zamknij_kubica_4() { window.close(); } </script>
+  <style> body { font-family: Arial, sans-serif; text-align:center; } img { max-width:100%; height:auto; }</style>
+</head>
+<body>
+  <h3>Scena 4</h3>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg" alt="grafika4">
+  <p style="color:maroon;">Opis 4: Wszyscy śmieją się razem — historyjka zakończona.</p>
+  <input type="button" value="zamknij okno" onclick="okno_zamknij_kubica_4()">
+</body>
+</html>
