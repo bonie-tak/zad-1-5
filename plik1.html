@@ -1,41 +1,21 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl-PL">
 <head>
   <meta charset="utf-8">
-  <title>Zadanie 5 - Kubica</title>
-  <script>
-    function WinOpen_kubica_1() {
-      window.open("grafika1_kub.html","graf1","toolbar=no,directories=no,menubar=no,height=300,width=320,top=50,left=50");
-    }
-    function WinOpen_kubica_2() {
-      window.open("grafika2_kub.html","graf2","toolbar=no,directories=no,menubar=no,height=300,width=320,top=50,left=400");
-    }
-    function WinOpen_kubica_3() {
-      window.open("grafika3_kub.html","graf3","toolbar=no,directories=no,menubar=no,height=300,width=320,top=350,left=50");
-    }
-    function WinOpen_kubica_4() {
-      window.open("grafika4_kub.html","graf4","toolbar=no,directories=no,menubar=no,height=300,width=320,top=350,left=400");
-    }
-    function okno_zamknij_kubica() {
-      window.close();
-    }
-  </script>
-  <style>
-    body { font-family: Arial, sans-serif; }
-    .note { font-weight: bold; margin-bottom: 10px; }
-    .btn { margin:6px; }
-  </style>
+  <title>z1 - Wizytówka - Kubica</title>
 </head>
 <body>
-  <p class="note">konieczny, obliczamy układ</p>
+<script>
 
-  <!-- 4 przyciski, każdy otwiera osobne okno z grafiką -->
-  <input type="button" class="btn" value="grafika1" onclick="WinOpen_kubica_1()">
-  <input type="button" class="btn" value="grafika2" onclick="WinOpen_kubica_2()">
-  <input type="button" class="btn" value="grafika3" onclick="WinOpen_kubica_3()">
-  <input type="button" class="btn" value="grafika4" onclick="WinOpen_kubica_4()">
-  <br><br>
-  <input type="button" value="zamknij okno" onclick="okno_zamknij_kubica()">
-  <p><small>Układ dobrany dla numeru w dzienniku 13 → Układ1 (okna rozmieszczone tak, by się nie nachodziły).</small></p>
+var borderChar = "+";
+var width = 25;
+var line = "";
+for (var i=0;i<width;i++){ line += borderChar; }
+document.write(line.fontcolor("#00FFFF") + "<br>");
+document.write((borderChar + "&nbsp;&nbsp;&nbsp;Imię: ".fontcolor("green") + "Szymon&nbsp;&nbsp;&nbsp;" + borderChar).fontcolor("#00FFFF") + "<br>");
+document.write((borderChar + "&nbsp;&nbsp;&nbsp;Nazwisko: ".fontcolor("green") + "Kubica&nbsp;&nbsp;&nbsp;" + borderChar).fontcolor("#00FFFF") + "<br>");
+document.write(line.fontcolor("#00FFFF") + "<br>");
+document.title = "Kubica - Wizytówka";
+</script>
 </body>
 </html>
